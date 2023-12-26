@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ecommerce</title>
     <link rel="stylesheet" href="css/style.css">
-    <link
-  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css"  rel="stylesheet"/>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.css">
 <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </head>
   <body>
     <header class="header mt-2 mb-5" style="margin-bottom: 100px;">
-     <nav class="nav container" >
+     <nav class="nav " >
 
-      <div class="nav__toggle"  onclick="showSidebar()"id="nav-toggle">
-        <img src="image/menu-2-line.png" alt="">
+      <div class="nav__toggle mt-3"  onclick="showSidebar()"id="nav-toggle">
+        <img src="image/menu-2-line.png" style="width: 30px;" alt="">
       </div>
          
       <img src="image/ERE_LOGO_BLACK 1 (1) 2.jpg" alt="" class="nav__logo">
@@ -65,21 +65,27 @@
             </button>
         </form>
         
-        <div class="nav__actions">
-        <img src="image/Wishlist.png" alt="" class=" wishlist">
-        <img src="image/user-line.png" alt="" class="  hideOnmob">
-        <img src="image/Cart1.png" alt="" class="">
-      </div>
+       
+      <div class="nav__actions mt-3" id="">
+            <img src="image/user-line.png" class="hideOnmob">
+            <img src="image/Wishlist.png" alt="" style="width: 30px;">
+        <img src="image/Cart1.png" alt="" style="width: 30px;">
+      
+        
+      
+       </div>
+       
     </nav>
 
     <form class="search1 ">
       <button class="submit1">
-        <img src="image/Component 2.png" alt="">
+        <img src="image/Component 2.png" alt="" style="width: 40px;">
     </button>
       <input type="text" placeholder="What are you looking for?">
     </form>
 
   </header>
+
   <script>
     function showSidebar(){
       const sidebar = document.querySelector('.sidebar')
@@ -99,22 +105,14 @@
     <input type="text" placeholder="What are you looking for?">
   </form>
 </div>
-  <div class="container container-main  mt-5 w-100 " style="background: black; width: 40%; height:50%; top:50% ">
-    <div class="row ">
-      <div class="col-lg-6 col-sm-6 col-md-6 mt-5 ">
-        <div class="apple-sec mt-5">
-        <img src="image/apple.png"style="width: 20px; text-align:center;" alt="">
-         <div style="color: white;">iPhone 14 Series</div>
-        </div>
-         <h1 class="text-white ms-5 mt-3" style=" text-align: center;">Up to 10%<br> off Voucher</h1>
-         <div class ="mt-3" style=" text-align: center;  color: #FAFAFA; font-size: 16px; font-family: Poppins; font-weight: 500; line-height: 24px; word-wrap: break-word">Shop Now</div>
-      </div>
-      <div class="col-lg-6 col-sm-6 col-md-6 mt-5">
-        <img style="width: 100%; height: 100%" src="image/iphone.png" />
-      </div>
-   
-    </div>
+
+
+  
+  <div>
+    <img src="image/Frame 560.png" alt="" class="imag">  
   </div>
+
+
 <div class="category mt-5 ms-5"  >
   <img src="image/Rectangle 18.png" alt="" style="height:40px">
   <h3 style="color: #3E56A2; font-size: 1rem; font-family: Poppins; font-weight: bolder; line-height: 40px; word-wrap: break-word">Categories</h3>
@@ -164,9 +162,10 @@
 
 </div>
 <div class="container text-center mt-5 ">
-  <div class="row gy-5"  >
-
-    <div class="col-sm-4 col-md-4 col-lg-3 "style=" ">
+ 
+ 
+  <div class=" row custom-sm-columns row-cols-1 row-cols-md-4 g-4 gy-5"   >
+   <div class="col   "style=" ">
      <div class="card mt-2  " style="width: 15rem; height: 350px; align-items: end;">
       <img src="image/Wishlist.png" alt="" style="width: 30px; height: 30px;">
       <img src="image/man.png" class="card-img" alt="...">
@@ -178,8 +177,8 @@
     </div>
   </div>
   
-    <div class="col-sm-4 col-md-4 col-lg-3">
-      <div class="card mt-2" style="width: 15rem; height: 350px; align-items: end;">
+    <div class="col">
+      <div class="card mt-2" style="width: 15rem; height: 350px; align-items: end; ">
        <img src="image/Wishlist.png" alt="" style="width: 30px; height: 30px;">
        <img src="image/man.png" class="card-img" alt="...">
        <div class="card-body " style="top: 0;">
@@ -190,7 +189,7 @@
      </div>
    </div>
   
-    <div class="col-sm-4 col-md-4 col-lg-3">
+    <div class="col">
       <div class="card mt-2" style="width: 15rem; height: 350px; align-items: end;">
        <img src="image/Wishlist.png" alt="" style="width: 30px; height: 30px;">
        <img src="image/man.png" class="card-img" alt="...">
@@ -201,7 +200,7 @@
        </div>
      </div>
    </div>
-    <div class="col-sm-4 col-md-4 col-lg-3">
+    <div class="col">
       <div class="card mt-2" style="width: 15rem; height: 350px; align-items: end;">
        <img src="image/Wishlist.png" alt="" style="width: 30px; height: 30px;">
        <img src="image/man.png" class="card-img" alt="...">
@@ -216,9 +215,9 @@
 </div>
       
 <div class="container container-sec text-center mt-5 ">
-  <div class="row gy-5 " style="gap: px;" >
+  <div class="row custom-sm-columns row-cols-1 row-cols-md-4 g-4 gy-5 " style="gap: px;" >
 
-    <div class="col-sm-3 col-md-4 col-lg-3 "style=" ">
+    <div class="col"style=" ">
      <div class="card mt-2  " style="width: 15rem; height: 350px; align-items: end;">
       <img src="image/Wishlist.png" alt="" style="width: 30px; height: 30px;">
       <img src="image/man.png" class="card-img" alt="...">
@@ -229,7 +228,7 @@
       </div>
     </div>
   </div>
-    <div class="col-sm-3 col-md-4 col-lg-3">
+    <div class="col">
       <div class="card mt-2" style="width: 15rem; height: 350px; align-items: end;">
        <img src="image/Wishlist.png" alt="" style="width: 30px; height: 30px;">
        <img src="image/man.png" class="card-img" alt="...">
@@ -241,7 +240,7 @@
      </div>
    </div>
   
-    <div class="col-sm-3 col-md-4 col-lg-3">
+    <div class="col">
       <div class="card mt-2" style="width: 15rem; height: 350px; align-items: end;">
        <img src="image/Wishlist.png" alt="" style="width: 30px; height: 30px;">
        <img src="image/man.png" class="card-img" alt="...">
@@ -252,7 +251,7 @@
        </div>
      </div>
    </div>
-    <div class="col-sm-4 col-md-4 col-lg-3">
+    <div class="col">
       <div class="card mt-2" style="width: 15rem; height: 350px; align-items: end;">
        <img src="image/Wishlist.png" alt="" style="width: 30px; height: 30px;">
        <img src="image/man.png" class="card-img" alt="...">
@@ -266,9 +265,9 @@
   </div>
 </div>
 <div class="container text-center mt-5 ">
-  <div class="row gy-5" style="gap: px;" >
+  <div class="row custom-sm-columns row-cols-1 row-cols-md-4 g-4 gy-5" style="gap: px;" >
 
-    <div class="col-sm-9 c6ol-md-6 col-lg-3 "style=" ">
+    <div class="col "style=" ">
      <div class="card mt-2  " style="width: 15rem; height: 350px; align-items: end;">
       <img src="image/Wishlist.png" alt="" style="width: 30px; height: 30px;">
       <img src="image/man.png" class="card-img" alt="...">
@@ -279,7 +278,7 @@
       </div>
     </div>
   </div>
-    <div class="col-sm-3 col-md-6 col-lg-3">
+    <div class="col">
       <div class="card mt-2" style="width: 15rem; height: 350px; align-items: end;">
        <img src="image/Wishlist.png" alt="" style="width: 30px; height: 30px;">
        <img src="image/man.png" class="card-img" alt="...">
@@ -291,7 +290,7 @@
      </div>
    </div>
   
-    <div class="col-sm-9 col-md-6 col-lg-3">
+    <div class="col">
       <div class="card mt-2" style="width: 15rem; height: 350px; align-items: end;">
        <img src="image/Wishlist.png" alt="" style="width: 30px; height: 30px;">
        <img src="image/man.png" class="card-img" alt="...">
@@ -302,7 +301,7 @@
        </div>
      </div>
    </div>
-    <div class="col-sm-3 col-md-6 col-lg-3">
+    <div class="col">
       <div class="card mt-2" style="width: 15rem; height: 350px; align-items: end;">
        <img src="image/Wishlist.png" alt="" style="width: 30px; height: 30px;">
        <img src="image/man.png" class="card-img" alt="...">
@@ -315,6 +314,7 @@
    </div>
   </div>
 </div>
+
 <footer class="bg-dark text-white text-center text-lg-start footer mt-4">
   <div class="container  p-4">
     
@@ -372,19 +372,6 @@
     </div>
       
  </div>
-
- 
-  
-    
-  </footer>
-
-
-
-
-
-
-
-
-    
-  </body>
+    </footer>
+ </body>
 </html>
