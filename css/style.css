@@ -1,6 +1,7 @@
 
 
 *{
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,15 +10,21 @@
     text-decoration: none;
 }
 body{
+
     width: 100%;
 }
 
 
 header{
+position: fixed;
     
-    width: 100%;
+left: 0;
+width: 100%;
 font-family: Poppins;
-    
+column-gap: 0.5rem;
+border-bottom: 1px solid;
+background-color:white;
+background-size: 100px;
     
 }
 .nav{
@@ -45,7 +52,7 @@ nav a{
 .nav__login,
 .nav__toggle,
 .nav__close{
-    font-size: 1.25rem;
+    font-size:rem;
     color: var(--title-color);
     cursor: pointer;
     transition:  color .4s;
@@ -79,8 +86,15 @@ nav a{
     
     background-color: #f5f5f5;
 }
-.ham-menu-btn,.wishlist,.for-1{
+.wishlist,.for-1{
     display: none;
+}
+.imag{
+    height: clamp(35rem, 100vh, 40rem);
+    width: 1000px;
+    margin-top: 100px;
+    margin-left: 100px;
+    text-align: center;
 }
 .icon-section{
     display: flex;
@@ -125,7 +139,8 @@ nav a{
  @media(width<900px){
     .nav__toggle{
         display: flex;
-       padding-left: 0;
+       padding-left: 50px;
+       width: 200px;
 
     }
     .container-sec{
@@ -133,41 +148,50 @@ nav a{
         flex-direction: row;
         column-gap: 14px;
     }
+    .header{
+        position:fixed;
+        
+        top: 0;
+        width: 100%;
+        height: 80px;
+        background-color: #FAFAFA;
+    }
     
     .nav__menu{
-        display: none;
+        display: flex;
     }
     .sidebar{
-        
-        background-color: white;
-    
+        margin-top: 20px;
+        position: fixed;
+        top: 0;
+        left:  0;
+        height: 100vh;
         width: 100%;
-        padding-block:2rem 2rem ;
-        transition: top .4s;
+        z-index: 999;
+     background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(5px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+        display: flex;
         
         flex-direction: column;
-        text-align: center;
+        align-items: center;
+        justify-content: flex-start;
         
         row-gap: 2.5rem;
        
      }
-     .nav-list{
-        display: flex;
-        flex-direction: column;
-           
-            row-gap: 2.5rem;
-            text-align: center;
-            list-style-type: none;
-        }
-            
-        
-        .nav-link{
-            text-decoration: none;
-            
-        }
+     .sidebar li{
+        width: 100%;
+     }
+     .sidebar a{
+        padding-top: 50px;
+        width: 100%;
+        color:#000;
+        font-size: 30px;
+     }
         .nav-close{
             position: absolute;
-            top: 25rem;
+            top: 1.5rem;
             right: 1.5rem;
             cursor: pointer;
         }
@@ -180,6 +204,8 @@ nav a{
                 border:1px solid #f5f5f5;
                 height: 2.5rem;
                 background-color: #f5f5f5;
+                margin-left: 100px;
+                
             }
             
                 
@@ -188,6 +214,7 @@ nav a{
                  background-color: #f5f5f5;
                 padding: 5px 5px;
                 border:5px solid #f5f5f5;
+                font-size: 1.5rem;
                 width: 300px;
             } 
              
@@ -196,9 +223,11 @@ nav a{
             
             position:absolute;
             left:0;
-            top:10%;
+            top: 70px;
             
-            border-radius: 3px;
+            border-radius: 12px;
+            margin-left: 0px;
+            padding-right: 50px;
             color: #f5f5f5;
             width: 100%;  
             background-color: #f5f5f5;
@@ -210,14 +239,18 @@ nav a{
         .sidebar1,.nav__login,.nav__logo{
             display: none;
         }
-   
+   .imag{
+    margin-top: 200px;
+    width: 150%;
+    margin-right: 90px;
+   }
    
     .main{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding-left: 20px;
-        padding-inline-start: 20px;
+        margin-left: 500px;
+        padding-inline-start: 60px;
         text-indent: 10px;
     }
 
@@ -229,17 +262,21 @@ nav a{
         display: none;
     }
     
-    .search{
-        display: none;
-    }
-    .cont{
-        
-    }
+
     
     .hideOnmob{
         display: none;
     }
+    .row {
+        display: flex;
+      }
+      
     
+      .column {
+        flex: 50%;
+        padding: 10px;
+        height: 300px; 
+      }
         
     
     
@@ -324,4 +361,32 @@ nav a{
        
      }
 
+}
+
+@media (max-width: 767px) {
+    /* On small screens, display 2 columns */
+    .custom-sm-columns {
+        /* Adjust margin for the gap */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 60px; /* Adjust the gap between columns */
+        margin-bottom: 0;
+    }
+
+    .custom-sm-columns .col {
+        flex: 0 0 calc(50% - 30px); /* Adjust width and consider the gap */
+        max-width: calc(50% - 30px); /* Adjust max-width and consider the gap */
+        box-sizing: border-box; /* Include padding and border in width calculation */
+    }
+
+    .card {
+        margin-left: 100px;
+        width: 1000px;
+        height: 500px;
+    }
+.nav__actions{
+    margin-right: 80px;
+}
+    
 }
